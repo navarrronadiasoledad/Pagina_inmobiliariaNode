@@ -1,0 +1,462 @@
+*{
+    box-sizing: border-box;
+    /* No incrementa el tmn de la caja un padding o un margen */
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    background-color: #fff;
+    color: #fff;
+}
+/* ------- */
+/* General */
+/* ------- */
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+h1{font-size: 60px;
+    text-transform: uppercase;
+}
+h2{font-size: 28px;
+    text-transform: uppercase;
+}
+h3{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+/* ---------- */
+/* Utilidades */
+/* ---------- */
+.contenedor{
+    margin:0 auto;
+    height: 100%;
+    max-width: 1200px;
+    position: relative;
+}
+
+.centrar{text-align: center;}
+
+
+.margenb-2{margin-bottom: 20px;}
+.margenb-3{margin-bottom: 30px;}
+.margenb-5{margin-bottom: 50px;}
+.margenb-9{margin-bottom:90px;}
+
+
+.margent-3{margin-top: 30px;}
+.margent-5{margin-top: 50px;}
+.margent-9{margin-top:90px;}
+
+.separar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.boton{
+    font-weight: bold;
+    font-size: 14px;
+    color: #000;
+    background-color: #fff;
+    display:inline-block;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    border-radius: 100px;
+}
+
+.boton:hover{
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+}
+
+
+/* Navegacion */
+
+nav{
+    background-color:#fff;
+    margin: 0 auto;
+    width:1200px;
+    padding: 20px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.logo{
+    flex-basis:60%
+}
+
+.menu{
+    flex:1;
+    display:flex;
+    justify-content: space-between;
+}
+
+.menu a{
+    font-size: 16px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.menu a:hover{
+    color: rgb(232, 169, 75);
+}
+ul li a.activo{
+    color: rgb(232, 169, 75);
+
+}
+/* -------------------- */
+/* Pagina de entrada */
+/* -------------------- */
+
+header{
+    height:90vh;
+    background:url("../images/home/Main.jpg");
+    background-size: cover;
+    background-position: center center;
+    position:relative;
+}
+
+.brillo{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+.caja-de-texto{
+    position: absolute;
+    width: 60%;
+    top:20%;
+    left: 0;
+}
+
+.caja-de-texto h1{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.caja-de-texto p{
+    font-size: 20px;
+}
+
+/* Residencias */
+
+.section-1{
+    height:350px;
+    color:#000;
+    text-align: center;
+}
+
+
+.cajas{
+    max-width:1200px;
+    margin:0 auto;
+}
+
+.caja{
+    width: 32%;
+    float: left;
+    text-align: center;
+}
+
+
+
+
+/*---------------- */
+/* Sobre nosotros */
+/* -------------- */
+
+.section-2{
+    background-color: #000;
+    padding:50px 0;
+}
+
+.sobre-nosotros{
+    display: flex;
+    justify-content:space-between;
+    height:100%;
+}
+
+.sobre-nosotros-img{
+    height:100%;
+    flex: 0 0 40%;
+}
+.sobre-nosotros-img img{
+    width:100%;
+}
+
+
+
+.sobre-nosotros-texto{
+    flex: 0 0 50%;
+}
+
+.sobre-nosotros-texto div p{
+    line-height: 1.4;
+}
+
+
+/* Seccion 3  */
+
+.section-3{
+    height:650px;
+    color:#000;
+}
+
+.section-3 h3{
+    font-size: 25px;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.cards{
+    max-width:1200px;
+    margin: 0 auto;
+}
+
+.card{
+    position: relative;
+    float:left;
+    width:28%;
+    height:400px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5)
+}
+.card img{
+    background-color: #000;
+    width:100%;
+}
+.ef-oscuro{
+    filter: brightness(60%);
+    transition:filter .3s ease;
+}
+
+.ef-oscuro:hover{
+       cursor:pointer;
+    filter:brightness(80%); 
+}
+
+
+.card:not(:last-child){
+    margin-right: 8%;
+}
+
+
+.lugar-caja-texto{
+    position:absolute;
+    bottom:50px;
+    left:20px;
+}
+
+.btn-blanco{
+    font-weight: bold;
+    display: inline-block;
+    padding:1px;
+    border-radius: 4px;
+    background-color:#fff;
+    color:#000;
+    text-decoration: none;
+}
+
+
+/* Footer */
+
+footer{
+    font-size: 15px;
+    padding:40px;
+    background-color:#000;
+    height: 300px;
+}
+.footer-listas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-lista {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+.footer-lista li{
+    padding-top: 25px;
+}
+.footer-lista li a{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Ventas */
+/* ---------------------------------------------------------------------------------------------------- */
+
+.main-ventas{
+    text-align: center;
+  height: 650px;
+}
+
+.main-ventas h2{
+    color: #000;
+}
+
+.main-ventas .card{
+    background-color: #000;
+    margin-bottom: 40px;
+
+}
+
+.main-ventas .card{
+    background-color:#000;
+
+}
+.card-img{
+    height:230px;
+}
+.card-img img{
+    filter: brightness(100%);
+    width:100%;
+}
+
+.card-text{
+    margin: auto;
+    height:40%;
+    width: 70%;
+}
+
+.card-text-icons{
+    color:#fff;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* ---------------------------------------------------------------------------------------------------- */
+/* Contacto */
+/* ---------------------------------------------------------------------------------------------------- */
+.section-contacto{
+    padding: 50px;
+    height:580px;
+    color:#000;
+}
+.formu{
+    height:100%;
+    flex: 0 0 60%;  
+}
+
+.section-contacto-caja{
+    display:flex;
+}
+
+
+.contactos{
+    flex: 0 0 40%;
+}    
+
+.formu label{
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+}
+.formu textarea,
+.formu input{
+    background-color: #ccc;
+    border-radius: 5px;
+    border: 1px solid #999;
+    font-size: 14px;
+    padding: 4px;
+    width: 50%;
+}
+.formu textarea{
+    height: 100px;
+    resize: none;
+}
+.formu input[type="submit"]{
+    cursor: pointer;
+    background-color: #6da9ed;
+    width: auto;
+    padding: 6px;
+    box-shadow: 0 0 10px rgb(0,0,0,0.5);
+    color: white;
+    font-size: 18px;
+
+}
+
+/*  -----------  */
+/*   NOVEDADES   */
+/*  -----------  
+
+.novedades{
+    margin: 60px 0;
+    color:#000;
+}
+
+
+.novedades-caja{
+    line-height: 1.3;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.novedades-caja-img{
+    flex: 0 0 20%;
+}
+.novedades-caja-img img{width: 100%;}
+
+.novedades-caja-texto{
+    flex: 0 0 75%;
+}
+
+.novedades-caja-texto h3{margin: 0;}
+
+/* login */
+/*
+.labeltitulo{
+    color: #000;
+    
+}*/
+
+.w500{
+    width: 500px;
+    color:#000;
+}
+
+.w500 input{
+    width: 100%;
+}
+.w400{
+    width: 900px;
+    color: #000;
+}
+
+.buscador{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*
+.noticias{
+
+}*/
+.noticias-caja{
+    margin-bottom: 80px;
+}
+
+.novedad-busqueda{
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,49 @@
+<main>
+        <section class="section-contacto">
+        <div class="contenedor">
+           <div class="section-contacto-caja">
+               <div class="formu">
+                <h2>complete los siguiente formulario</h2>
+                <form action="/contacto" method="post" class="contacto">
+                    <p>
+                        <label for="">Nombre</label>
+                        <input type="text" name="nombre" required> 
+                    </p>
+                    <p>
+                        <label for="">Email</label>
+                        <input type="email" name="email" required>
+                    </p>
+                    <p>
+                        <label for="">Telefono </label>
+                        <input type="number" name="tel" required >
+                    </p>
+                    <p>
+                        <label for="">comentario </label>
+                        <textarea name="comentarios" required></textarea>
+                    </p>
+                    <p class="centrar"><input type="submit"  value="enviar"></p>
+                </form>
+                {{#if message }}
+                <p>{{message}}</p>
+                {{/if}}
+             </div>
+                 <div class="contactos">
+                     <h2 class="margenb-5">Más medios de contacto  </h2>
+                      <div class="margenb-5">
+                        <ul>
+                            <li class="margenb-2">Telefono:534567 </li>
+                            <li class="margenb-2">email: info@raices.com  </li>
+                            <li class="margenb-2">Facebook: @raicesvalentin</li>
+                            <li class="margenb-2">twitter:  @raicesvalentin</li>
+                            <li class="margenb-2">Instragram: @raicesvalentin  </li>
+                        </ul>
+                      </div>
+                      
+                 </div>
+               </div>
+            </div>
+        </div>
+    </section>
+
+
+</main>

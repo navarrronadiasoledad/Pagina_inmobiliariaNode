@@ -1,0 +1,48 @@
+<div class="container w400" style="margin-top:20px; margin-bottom:120px;">
+    <div class="row">
+        <div>
+              <p style="text-align: right;"> Bienvenido {{usuario}} <a href="/admin/login/logout" class="btn btn-danger"><i class="fa fa-sign-out" aria-hidden="true"></i>
+        </a><a class="btn btn-success" href="/admin/novedad/agregar"> <i class="fa fa-plus" aria-hidden="true"></i> </a></p>
+
+        </div>
+    </div>
+<div class="row separar">
+    <div class="col-7">
+        <h2>lista de novedades</h2>     
+     </div>
+     <div class="col-3">
+         <form class="novedad-busqueda" action="/admin/novedad" method="get">
+           <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" name="q" {{#if q}} value="{{q}}" {{/if}}><button class="btn btn-secondary" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+    
+         </form>
+
+     </div>
+</div>
+ <div>
+ </div>
+    <table class="table table-dark table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Titulo</th>
+                <th scope="col">Acciones</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            {{#each novedad}}
+            <tr>
+                <th scope="row">{{id}}</th>
+                <td>{{titulo}}</td>
+                <td><a href="/admin/novedad/modificar/{{id}}" class="btn btn-secondary"><i class="fa fa-pencil-square" aria-hidden="true"></i></a> <a href="/admin/novedad/eliminar/{{id}}" class="btn btn-secondary"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+                
+            </tr>
+            {{/each }}
+        </tbody>
+    </table>
+ {{#if is_seach}}
+   {{#unless novedades.Length}}
+    <p>no se encontro <span>{{q}}</span></p>
+    {{/unless}}
+    {{/if}}
+</div>

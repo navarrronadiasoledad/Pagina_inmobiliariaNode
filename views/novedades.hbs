@@ -1,0 +1,28 @@
+<main class="contenedor w400">
+    
+    <h2 style="margin-bottom: 60px;">Noticias en el ambiente inmobiliario</h2>
+         <div class="col-3">
+         <form class="novedad-busqueda" action="/novedades" method="get">
+           <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" name="q" {{#if q}} value="{{q}}" {{/if}}><button class="btn btn-secondary" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+    
+         </form>
+
+     </div>
+
+    <div class="noticias">
+        {{#each novedades}}
+        <div class="noticias-caja">
+            <h3>{{titulo}}</h3>
+            <h4>{{subtitulo}}</h4>
+            <p>{{{cuerpo}}}</p>
+        </div>
+        {{/each}} 
+   
+    {{#if is_search}}
+            {{#unless novedades.length}}
+                 <p ><strong style="color:green;"> No </strong> se encontraron resultados para <span style="color:red;">{{q}}</span></p>
+            {{/unless}}
+        {{/if}}
+   </div>
+ 
+</main>

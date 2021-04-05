@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raices valentin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Lato:wght@300&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="/stylesheets/normalize.css" />
+    <link rel="stylesheet" href="/stylesheets/inmob.css" />
+    
+</head>
+<body>
+  <!-- Barra de navegacion -->
+    <nav>
+        <div class="logo">
+            <img src="/images/edificio.png" width="100" alt="">
+        </div>
+        <ul class="menu">
+            <li><a href=" /" class="{{#if isIndex}}activo{{/if}}">Inicio</a></li>
+            <li><a href="/ventas" class="{{#if isVentas}}activo{{/if}}">Ventas</a></li>
+            <li><a href="/novedades" class="{{#if isNovedades}}activo{{/if}}">Novedades</a></li>
+            <li><a href="/contacto" class="{{#if isContacto}}activo{{/if}}">Contacto</a></li>
+        </ul>
+    </nav>
+  
+
+    {{{body}}}
+    
+   
+    <footer>
+        <div class="contenedor">
+            <div class="footer-listas">
+                <ul class="footer-lista">
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="/ventas">Ventas</a></li>
+                    <li><a href="/novedades">novedades</a></li>
+                    <li><a href="/contacto">Contacto</a></li>
+                </ul>
+
+                <ul class="footer-lista">
+                    <li>152-1589-4563</li>
+                    <li>Valentin Gomez 5466, Capital Federal</li>
+                    <li>Diseñado por Nadia Navarro</li>
+                </ul>
+            </div>
+
+
+        </div>
+    </footer>
+  </body>
+
+</html>
