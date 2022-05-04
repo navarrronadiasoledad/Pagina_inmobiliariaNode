@@ -1,2 +1,2 @@
 # Pagina_inmobiliaria
-pagi hecha con node  https://raicesvalentin.herokuapp.com/novedades aca dejo el link 
+Pagina de una inmobiliaria raices valentin que fue  hecha con esta tecnologias node,html,css y javascript aca dejo el link   https://raicesvalentin.herokuapp.com/
